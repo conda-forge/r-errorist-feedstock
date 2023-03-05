@@ -1,4 +1,4 @@
-{% set version = '0.1.0' %}
+{% set version = "0.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/errorist_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/errorist/errorist_{{ version }}.tar.gz
-  sha256: 5091cbfa750e4b064bf11d96bf69d5214d748819077eba861b2d59e7b880057f
+  sha256: f0c90d71fb50d7c903eb0fdfe3fd8b9ee34507bad533b6c4af84db932ff65167
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
 
   rpaths:
@@ -42,12 +42,11 @@ about:
   home: https://github.com/r-assist/errorist
 
   license: GPL-2.0-or-later
-  summary: Provides environment hooks that obtain errors and warnings which occur during the
-    execution of code to automatically search for solutions.
+  summary: Provides environment hooks that obtain errors and warnings which occur during the execution of code to automatically search for solutions.
 
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
