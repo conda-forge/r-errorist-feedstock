@@ -1,11 +1,11 @@
-About r-errorist
-================
+About r-errorist-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-errorist-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/r-assist/errorist
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-errorist-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provides environment hooks that obtain errors and warnings which occur during the execution of code to automatically search for solutions.
 
