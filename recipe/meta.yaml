@@ -1,4 +1,4 @@
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/errorist_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/errorist/errorist_{{ version }}.tar.gz
-  sha256: f0c90d71fb50d7c903eb0fdfe3fd8b9ee34507bad533b6c4af84db932ff65167
+  sha256: 919b4d3c225aa928ae7e8ff59d02586256067995cd12093d4e5488d8d742aca4
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
 
   rpaths:
