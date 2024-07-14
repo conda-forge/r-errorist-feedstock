@@ -1,6 +1,5 @@
 {% set version = "0.1.2" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-errorist
@@ -13,8 +12,7 @@ source:
   sha256: 919b4d3c225aa928ae7e8ff59d02586256067995cd12093d4e5488d8d742aca4
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
 
   rpaths:
