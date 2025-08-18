@@ -1,4 +1,4 @@
-{% set version = "0.1.2" %}
+{% set version = "0.1.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/errorist_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/errorist/errorist_{{ version }}.tar.gz
-  sha256: 919b4d3c225aa928ae7e8ff59d02586256067995cd12093d4e5488d8d742aca4
+  sha256: f0f74baf15ae78eea63ebe9b7551acd29341ed2f6cba1aa70beb9b8098b1cb43
 
 build:
-  number: 1
+  number: 0
   noarch: generic
 
   rpaths:
